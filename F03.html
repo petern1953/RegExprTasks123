@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegExpr03</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+        // Írj reguláris kifejezést MAC-cím validálására! 
+        // Teszteld is a megoldásod!
+        // Az Ethernet MAC-cím egy 48 bites bináris érték, amit 12 hexadecimális számjeggyel írunk le
+
+        const MACpattern = /^[0-9A-F]{12}|[0-9a-f]{12}$/;
+        console.log(MACpattern.test('123A54F6543D'));
+
+    </script>
+</body>
+
+</html>

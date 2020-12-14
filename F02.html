@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegExpr02</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+        // Írj reguláris kifejezést IP-cím validálására! 
+        // Teszteld is a megoldásod!
+        // IPv4 szerinti IP-címek 32 bites egész számok, 
+        // amelyeket hagyományosan négy darab egy bájtos, azaz 0 és 255 közé eső, 
+        // ponttal elválasztott decimális számmal írunk le a könnyebb olvashatóság kedvéért. 
+        // (Pl. 172.16.254.1).
+
+        const IPpattern = /^(\d{1,3}[.]){3}\d{1,3}$/;
+        console.log(IPpattern.test('1.23.255.245'));
+
+    </script>
+</body>
+
+</html>
