@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegExpr01</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+        // Írj reguláris kifejezést Visa típusú bankkártyák bankszámlaszámának validálására! 
+        // Teszteld is a megoldásod!
+        // A VISA kártyák 16 számjegyből épülnek fel, és 4 - 4 - 4 - 4 bontásúak.
+
+        const VISApattern = /^(\d{4} ){3}\d{4}$/;
+        console.log(VISApattern.test('1234 2345 3456 4567'));
+
+    </script>
+</body>
+
+</html>
