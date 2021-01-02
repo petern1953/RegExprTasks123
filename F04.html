@@ -27,19 +27,24 @@
                 return this.rules[type].test(text);
             },
             validate2(text, type) {
-                return text.match(this.rules[type]);
+                // return text.match(this.rules[type]);
+                return text.match(this.rules[type]) ?
+                    true : false;
             }
         };
         console.log(Validator.validate1('1234 2345 3456 4567', 'VISApattern'));
         console.log(Validator.validate1('1.23.255.245', 'IPpattern'));
         console.log(Validator.validate1('123A54F6543D', 'MACpattern'));
         console.log('************');
-        console.log(Validator.validate2('1234 2345 3456 4567', 'VISApattern') ?
-            true : false);
-        console.log(Validator.validate2('1.23.255.245', 'IPpattern') ?
-            true : false);
-        console.log(Validator.validate2('123A54F6543D', 'MACpattern') ?
-            true : false);
+        // console.log(Validator.validate2('1234 2345 3456 4567', 'VISApattern') ?
+        //     true : false);
+        // console.log(Validator.validate2('1.23.255.245', 'IPpattern') ?
+        //     true : false);
+        // console.log(Validator.validate2('123A54F6543D', 'MACpattern') ?
+        //     true : false);
+        console.log(Validator.validate2('1234 2345 3456 4567', 'VISApattern'));
+        console.log(Validator.validate2('1.23.255.245', 'IPpattern'));
+        console.log(Validator.validate2('123A54F6543D', 'MACpattern'));
     </script>
 </body>
 
